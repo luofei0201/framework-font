@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta base="/video/">
+    <meta charset="utf-8">
+    <!--iPhone X新增 viweport-fit 属性，使得页面内容完全覆盖整个窗口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no">
+     <!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>华夏客服</title>
+    <link rel="stylesheet" href="/video/static/css/reset.css">
+    <style media="screen">
+      .loading-section {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color: #f4f4f4;
+      }
+      .loading-section > .loading-gif {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    </style>
+    <!-- <script src="https://cdn.bootcss.com/labjs/2.0.3/LAB.min.js"></script>
+    <script type="text/javascript">
+      $LAB.script('https://sqimg.qq.com/expert_qq/edu/1.2.1/sketchpad_sdk.mini.js')
+          .script('https://sqimg.qq.com/expert_qq/webim/1.7.1/webim.min.js')
+          .script('https://sqimg.qq.com/expert_qq/webrtc/2.2/WebRTCAPI.min.js')
+          .wait(() => {
+            console.log('============================> WebRTCAPI download over <================================')
+          })
+    </script> -->
+
+  </head>
+  <body id="body">
+    <div class="loading-section" id="appLoading">
+      <img class="loading-gif" width=50% src="/video/static/img/loading.gif">
+    </div>
+    <div id="app" style="display: none;"></div>
+    <!-- built files will be auto injected -->
+    <!-- <script src="//cdn.bootcss.com/vue/2.2.5/vue.min.js"></script>
+    <script src="//cdn.bootcss.com/vue-router/2.3.0/vue-router.min.js"></script>
+    <script src="//cdn.bootcss.com/vuex/2.2.1/vuex.min.js"></script>
+    <script src="//cdn.bootcss.com/axios/0.15.3/axios.min.js"></script> -->
+    <script src="//at.alicdn.com/t/font_800451_6uqrlobkxg6.js"></script>
+    <!-- <script src="//sqimg.qq.com/expert_qq/webim/1.7.1/webim.min.js"></script> -->
+    <script src="//sqimg.qq.com/expert_qq/webrtc/3.0/WebRTCAPI.min.js"></script>
+    <script src="//cdn.bootcss.com/spark-md5/3.0.0/spark-md5.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  </body>
+</html>
